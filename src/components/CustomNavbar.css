@@ -1,0 +1,24 @@
+ .custom-nav .nav-link {
+     font-size: 18px;
+     font-weight: 500;
+ }
+
+
+ .custom-button {
+     background-color: #6F4E37 !important;
+     border-color: #6F4E37 !important;
+     color: white;
+ }
+
+ .custom-button:hover {
+     background-color: #563829;
+     border-color: #563829;
+ }
+
+ .navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Bottom shadow */
+  }
+
+  .custom-nav .nav-link:hover {
+    text-decoration: underline; 
+  }

@@ -1,0 +1,41 @@
+.scrollable-menu-container {
+    background-color: #6f4e37 !important;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .scrollable-menu {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+  }
+  
+  .scrollable-menu::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .menu-item {
+    margin: 0 5px;
+    border-radius: 50px;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .scroll-button:first-of-type {
+    left: 0;
+  }
+  
+  .scroll-button:last-of-type {
+    right: 0;
+  }
+  

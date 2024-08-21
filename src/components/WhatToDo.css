@@ -1,0 +1,18 @@
+.card {
+    background-color: transparent;
+  }
+  
+  .card-body {
+    padding: 0;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #333;
+  }
+  

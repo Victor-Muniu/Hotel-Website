@@ -1,0 +1,36 @@
+.booking-form {
+    background-color: #4B2E2E; 
+    border-radius: 8px;
+  }
+  
+  .booking-form .btn-coffee-brown {
+    background-color: #fff;
+    border-color: #4B2E2E;
+    color: black;
+  }
+  
+  
+  .booking-form .form-control[readonly] {
+    cursor: pointer;
+    background-color: #f8f9fa;
+  }
+  
+  .booking-form .card {
+    border-radius: 10px;
+  }
+  
+  .booking-form .card-header {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  .booking-form .card-body {
+    padding: 15px;
+  }
+  
+  .booking-form .card-footer {
+    border-top: none;
+    padding: 10px;
+    background-color: transparent;
+  }
+  

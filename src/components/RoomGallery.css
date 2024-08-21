@@ -1,0 +1,54 @@
+/* RoomGallery.css */
+
+.main-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.thumbnail-sidebar {
+    background-color: #2a2a2a;
+    padding: 10px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.thumbnail-container {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.thumbnail-container.active .thumbnail-image {
+    border: 2px solid #ffffff;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.thumbnail-caption {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+}

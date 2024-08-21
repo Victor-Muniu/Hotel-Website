@@ -1,0 +1,29 @@
+/* RoomCards.css */
+
+.room-cards-container {
+    padding: 20px;
+}
+
+.room-card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+}
+
+.room-details {
+    font-size: 14px;
+    color: #666;
+}
+
+.main-amenities .amenity-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #444;
+}
+
+.main-amenities .amenity-icon:hover {
+    color: #007bff;
+}

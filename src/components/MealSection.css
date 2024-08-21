@@ -1,0 +1,29 @@
+.meal-section {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meal-section img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .meal-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .meal-section p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .meal-section .btn-link {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .meal-section .btn-link:hover {
+    text-decoration: underline;
+  }
+  
