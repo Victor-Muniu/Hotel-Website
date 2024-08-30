@@ -14,7 +14,7 @@ function Home() {
     <div style={{ width: '100%', margin: '0', padding: '0' }}>
       <Submenu />
       <HotelBookingForm />
-      {/***<BookingForm /> /** */}
+      
       <ScrollableMenu />
       <DetailsSection />
       <RoomTypes />

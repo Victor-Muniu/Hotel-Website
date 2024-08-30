@@ -1,0 +1,43 @@
+.scrollable-menu-container {
+    overflow: hidden;
+    position: relative;
+    background-color: #6f4e37; /* Coffee brown color */
+  }
+  
+  .scrollable-menu {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    background-color: #6f4e37; /* Coffee brown color */
+  }
+  
+  .menu-item {
+    margin-left: 15px;
+    background-color: #6f4e37; /* Coffee brown color for menu items */
+    color: white; /* Adjust text color to contrast with the background */
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 10;
+    color: white; 
+  }
+  
+  .scroll-button:focus {
+    outline: none;
+  }
+  
+  .scroll-button.left {
+    left: 0;
+  }
+  
+  .scroll-button.right {
+    right: 0;
+  }
+  

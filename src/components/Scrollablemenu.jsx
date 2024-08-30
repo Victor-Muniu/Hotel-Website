@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import './Scrollablemenu.css';
+import './ScrollableMenu.css';
 
 const ScrollableMenu = () => {
   const menuRef = useRef(null);
@@ -33,18 +33,41 @@ const ScrollableMenu = () => {
     navigate(path); 
   };
 
+  // Add touch event handlers
+  useEffect(() => {
+    const menuElement = menuRef.current;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    const onTouchStart = (e) => {
+      startX = e.touches[0].clientX;
+      scrollLeft = menuElement.scrollLeft;
+    };
+
+    const onTouchMove = (e) => {
+      const touch = e.touches[0];
+      const walk = (touch.clientX - startX) * 1; // Adjust scroll speed by multiplying
+      menuElement.scrollLeft = scrollLeft - walk;
+    };
+
+    if (menuElement) {
+      menuElement.addEventListener('touchstart', onTouchStart);
+      menuElement.addEventListener('touchmove', onTouchMove);
+    }
+
+    // Clean up event listeners on unmount
+    return () => {
+      if (menuElement) {
+        menuElement.removeEventListener('touchstart', onTouchStart);
+        menuElement.removeEventListener('touchmove', onTouchMove);
+      }
+    };
+  }, []);
+
   return (
     <Container fluid className="scrollable-menu-container" style={{marginTop: '10px'}}>
       <Row className="align-items-center">
-        {canScrollLeft && (
-          <Button
-            variant="link"
-            className="scroll-button"
-            onClick={() => scroll(-200)}
-          >
-            <FaAngleLeft size={20} />
-          </Button>
-        )}
+       
         <div ref={menuRef} className="scrollable-menu">
           <Button variant="light" className="menu-item" onClick={() => handleNavigation('/')}>
             Overview
@@ -61,7 +84,6 @@ const ScrollableMenu = () => {
           <Button variant="outline-light" className="menu-item" onClick={() => handleNavigation('/conferences')}>
             Meetings & Events
           </Button>
-          
           <Button variant="outline-light" className="menu-item" onClick={() => handleNavigation('/destinations')}>
             Nearby Attractions
           </Button>
@@ -69,15 +91,7 @@ const ScrollableMenu = () => {
             Contact
           </Button>
         </div>
-        {canScrollRight && (
-          <Button
-            variant="link"
-            className="scroll-button"
-            onClick={() => scroll(200)}
-          >
-            <FaAngleRight size={20} />
-          </Button>
-        )}
+       
       </Row>
     </Container>
   );
