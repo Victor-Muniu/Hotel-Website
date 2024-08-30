@@ -57,7 +57,7 @@ const roomsData = [
       image2,
       image3,
     ],
-    title: 'Superior Room',
+    title: 'Twin Room',
     size: '33 m²',
     adults: '2 adults',
     children: '1 child (0-11)',
@@ -69,7 +69,7 @@ const roomsData = [
       image5,
       image6,
     ],
-    title: 'Premium Room - Park Facing',
+    title: 'Dulex Double',
     size: '33 m²',
     adults: '2 adults',
     children: '1 child (0-11)',
@@ -81,13 +81,13 @@ const roomsData = [
       image8,
       image9
     ],
-    title: 'Executive Room with Lounge Access',
+    title: 'Standard',
     size: '33 m²',
     adults: '2 adults',
     children: '1 child (0-11)',
     bed: '2 twin or 1 king',
   },
-  // Add more rooms here...
+  
 ];
 
 export default RoomTypes;
