@@ -9,6 +9,9 @@ import Footer from "./components/Footer";
 import Confrences from "./pages/Confrences";
 import Rooms from "./pages/Rooms";
 import Destinations from "./pages/Destinations";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import ServicesPage from "./pages/ServicesPage";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="/conferences" element={<Confrences />}/>
           <Route path="/rooms" element={<Rooms />}/>
           <Route path="/destinations" element={<Destinations />}/>
+          <Route path='/blog' element={<Blog />}/>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path= '/services' element={<ServicesPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

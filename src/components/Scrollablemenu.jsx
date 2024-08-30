@@ -30,7 +30,7 @@ const ScrollableMenu = () => {
   };
 
   const handleNavigation = (path) => {
-    navigate(path); // Use navigate to change pages
+    navigate(path); 
   };
 
   return (
@@ -61,12 +61,7 @@ const ScrollableMenu = () => {
           <Button variant="outline-light" className="menu-item" onClick={() => handleNavigation('/conferences')}>
             Meetings & Events
           </Button>
-          <Button variant="outline-light" className="menu-item" onClick={() => handleNavigation('/deals')}>
-            Deals
-          </Button>
-          <Button variant="outline-light" className="menu-item" onClick={() => handleNavigation('/reviews')}>
-            Reviews
-          </Button>
+          
           <Button variant="outline-light" className="menu-item" onClick={() => handleNavigation('/destinations')}>
             Nearby Attractions
           </Button>

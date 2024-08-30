@@ -19,10 +19,9 @@ function CustomNavbar() {
         <Nav className="mx-auto custom-nav">
         <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/destinations">Destinations</Nav.Link>
-          <Nav.Link href="#resorts">Blogs</Nav.Link>
-          <Nav.Link href="#meetings-events">Meetings & Events</Nav.Link>
-          <Nav.Link href="#deals">Deals</Nav.Link>
-          <Nav.Link href="#my-reservations">My Reservations</Nav.Link>
+          <Nav.Link href="/blog">Blogs</Nav.Link>
+          <Nav.Link href="/conferences">Meetings & Events</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
         </Nav>
         <Nav className="align-items-center">
           <NavDropdown title={<><FaGlobe /> ENGLISH</>} id="basic-nav-dropdown">

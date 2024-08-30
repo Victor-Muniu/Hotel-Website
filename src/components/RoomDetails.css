@@ -27,3 +27,55 @@
 .main-amenities .amenity-icon:hover {
     color: #007bff;
 }
+
+
+
+.room-cards-container {
+    padding: 20px;
+}
+
+.room-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-details {
+    font-size: 14px;
+    color: #555;
+}
+
+.amenity-icon {
+    margin-right: 10px;
+}
+
+.booking-form {
+    padding: 20px;
+    background-color: white;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
+
+.modal-backdrop {
+    opacity: 0.5 !important;
+}
+
+
+.rotate {
+    animation: rotateButton 1s ease-in-out;
+}
+
+@keyframes rotateButton {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.booking-details-card {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
