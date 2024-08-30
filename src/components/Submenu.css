@@ -52,3 +52,9 @@
   border-radius: 50%;
   background: linear-gradient(to right, #6f4e37 50%, #e0e0e0 50%);
 }
+
+@media (max-width: 991.98px) {
+  .submenu-container {
+    display: none;
+  }
+}
